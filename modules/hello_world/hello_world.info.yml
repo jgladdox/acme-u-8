@@ -1,0 +1,6 @@
+name: 'hello world'
+dependencies: {  }
+description: 'this is a basic module that prints ''hello world'''
+core: 8.x
+package: Custom
+type: module

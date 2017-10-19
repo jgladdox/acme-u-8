@@ -1,0 +1,6 @@
+hello_world.start:
+    path: /custom/start
+    defaults:
+        _controller: '\Drupal\hello_world\Controller\HelloWorldStartController::startAction'
+    requirements:
+        _permission: 'access content'

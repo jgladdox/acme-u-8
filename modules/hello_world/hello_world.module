@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * hello_world.module
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function hello_world_menu() {
+  $items = array();
+  return $items;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function hello_world_form_alter() {
+
+}
