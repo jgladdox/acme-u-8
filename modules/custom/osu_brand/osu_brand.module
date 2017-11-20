@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function osu_brand_theme($existing, $type, $theme, $path) {
+  $variables = array(
+    'osu_brand_navbar' => [
+      'template' => 'osu-brand-navbar',
+      'variables' => [],
+    ],
+    'osu_brand_footer' => [
+      'template' => 'osu-brand-footer',
+      'variables' => [],
+    ],
+    'osu_brand_tab_filter_listing' => [
+      'variables' => [
+        'tabs' => NULL,
+        'filters' => NULL,
+        'listing' => NULL
+      ],
+    ]
+  );
+  return $variables;
+}
+
+function osu_brand_preprocess_osu_brand_footer(&$variables) {
+  // Lets inject variables if the siteinfo is installed (no hard dependency).
+  $moduleHandler = \Drupal::service('module_handler');
+  if ($moduleHandler->moduleExists('osu_siteinfo')){
+    $config = \Drupal::config('osu_siteinfo.settings');
+    foreach (['address1', 'address2', 'city', 'state', 'postal', 'phone', 'email'] as $key) {
+      $variables[$key] = $config->get($key);
+    }
+  }
+}
