@@ -1,7 +1,7 @@
 acme_siteinfo.admin_settings_form:
-  path: '/admin/config/system/osu-siteinfo'
+  path: '/admin/config/system/acme-siteinfo'
   defaults:
     _form: '\Drupal\acme_siteinfo\Form\InfoForm'
-    _title: 'Site Verification'
+    _title: 'Enter Site Info for Site Verification'
   requirements:
     _permission: 'administer acme siteinfo'
