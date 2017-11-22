@@ -1,0 +1,5 @@
+name: 'ACME SiteInfo'
+description: 'Provides a central location to enter site info for display in blocks like the footer. Version 8.x-1.x-dev'
+type: module
+core: 8.x
+dependencies:

@@ -1,0 +1,4 @@
+acme_siteinfo.admin_settings_form_tab:
+  route_name: acme_siteinfo.admin_settings_form
+  title: Settings
+  base_route: acme_siteinfo.admin_settings_form

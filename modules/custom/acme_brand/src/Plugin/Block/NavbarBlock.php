@@ -1,15 +1,15 @@
 <?php
 
-namespace Drupal\osu_brand\Plugin\Block;
+namespace Drupal\acme_brand\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
 /**
- * Provides a 'OSU Navbar' Block.
+ * Provides a 'ACME Navbar' Block.
  *
  * @Block(
- *   id = "osu_brand_navbar",
- *   admin_label = @Translation("OSU Navbar"),
+ *   id = "acme_brand_navbar",
+ *   admin_label = @Translation("ACME Navbar"),
  *   category = @Translation("Brand"),
  * )
  */
@@ -20,7 +20,7 @@ class NavbarBlock extends BlockBase {
    */
   public function build() {
     return array(
-      '#theme' => 'osu_brand_navbar',
+      '#theme' => 'acme_brand_navbar',
     );
   }
 

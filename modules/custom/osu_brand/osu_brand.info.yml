@@ -1,5 +1,0 @@
-name: 'OSU Brand'
-description: 'Includes blocks and code for standard brand elements.'
-type: module
-core: 8.x
-dependencies:

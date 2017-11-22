@@ -1,15 +1,15 @@
 <?php
 
-namespace Drupal\osu_brand\Plugin\Block;
+namespace Drupal\acme_brand\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
 /**
- * Provides a 'OSU Footer' Block.
+ * Provides a 'ACME Footer' Block.
  *
  * @Block(
- *   id = "osu_brand_footer",
- *   admin_label = @Translation("OSU Footer"),
+ *   id = "acme_brand_footer",
+ *   admin_label = @Translation("ACME Footer"),
  *   category = @Translation("Brand"),
  * )
  */
@@ -20,7 +20,7 @@ class FooterBlock extends BlockBase {
    */
   public function build() {
     return array(
-      '#theme' => 'osu_brand_footer',
+      '#theme' => 'acme_brand_footer',
     );
   }
 

@@ -1,0 +1,3 @@
+administer acme siteinfo:
+  title: 'Administer Site Information (ACME)'
+  description: 'Edit organizational information for the site'
