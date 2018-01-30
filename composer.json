@@ -19,6 +19,7 @@
 	"require": {
         "drupal/config_direct_save": "^1.0s",
 		"drupal/webform": "^5.0@RC"
+		"drupal/bootstrap": "^3.9"
 	}
     "extra": {
         "_readme": [
