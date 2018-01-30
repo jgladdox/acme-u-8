@@ -16,10 +16,6 @@
         "preferred-install": "dist",
         "autoloader-suffix": "Drupal8"
     },
-	"require": {
-        "drupal/config_direct_save": "^1.0s",
-		"drupal/webform": "^5.0@RC"
-	}
     "extra": {
         "_readme": [
             "By default Drupal loads the autoloader from ./vendor/autoload.php.",
