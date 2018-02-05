@@ -1,0 +1,41 @@
+<!-- D7 webform confirmation page and email token values -->
+<legend><a href="https://pharmacy.osu.edu/node/8274/webform/configure?render=overlay#">TOKEN VALUES</a></legend>
+<div>
+  <div>
+    <p>You may use special tokens in this field that will be replaced with dynamic values.</p>
+    <div>
+      <h3>Basic tokens</h3>
+      <ul>
+        <li>%username - The name of the user if logged in. Blank for anonymous users.</li>
+        <li>%useremail - The e-mail address of the user if logged in. Blank for anonymous users.</li>
+        <li>%ip_address - The IP address of the user.</li>
+        <li>%site - The name of the site (i.e. <em>College of Pharmacy</em>)</li>
+        <li>%date - The current date, formatted according to the site settings.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Node tokens</h3>
+      <ul>
+        <li>%nid - The node ID.</li>
+        <li>%title - The node title.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Special tokens</h3>
+      <ul>
+        <li>%profile[key] - Any user profile field or value, such as %profile[name] or %profile[profile_first_name]</li>
+        <li>%get[key] - Tokens may be populated from the URL by creating URLs of the form http://example.com/my-form?foo=bar. Using the token %get[foo] would print "bar".</li>
+        <li>%post[key] - Tokens may also be populated from POST values that are submitted by forms.</li>
+      </ul>
+    </div>
+    <p>In addition to %get and %post, the following super tokens may be used, though only with logged-in users: %server, %cookie, and %request. For example %server[HTTP_USER_AGENT] or %session[id].</p>
+    <div>
+      <h3>Submission tokens</h3>
+      <ul>
+        <li>%sid - The unique submission ID.</li>
+        <li>%value[key] - A value without additional formatting. Elements may be accessed such as <em>%value[fieldset_a][key_b]</em>. Do not include quotes.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
