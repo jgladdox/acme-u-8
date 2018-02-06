@@ -1,0 +1,109 @@
+<!--Drush Commands - ACME U 8 -  2/6/18 -->
+<h2>Selected Drush Commands</h2>
+<p>Run drush help for more information.</p>
+
+<h2>Archives (core drush)</h2>
+<ul>
+<li> archive-dump (ard, archive-backup, arb) -    Backup your code, files, and database into a single file. </li>
+<li> archive-restore (arr) -    Expand a site archive into a Drupal web site.</li>
+</ul>
+
+<h2>Core Drush commands: (core)</h2>
+<ul>
+<li>core-cli (php)   -     Open an interactive shell on a Drupal site.</li>
+<li>core-config (conf,  config) -   Edit drushrc, site alias, and Drupal settings.php files.</li>
+<li>core-cron (cron)   -   Run all cron hooks in all active modules for specified site.</li>
+<li> core-requirements (status-report, rq) -     Provides information about things that may be wrong in your Drupal installation, if any.</li>
+ <li>core-rsync (rsync)   - Rsync the Drupal tree to/from another server using ssh.</li>
+ <li>core-status (status,  st) -  Provides a birds-eye view of the current Drupal</li>
+<li>queue-list            Returns a list of all defined queues</li>
+<li> queue-run       -      Run a specific queue by name</li>
+<li> sanitize:comments   (sanitize-comments) -    Sanitizes comments_field_data table??</li>
+<li> sanitize:sessions   (sanitize-sessions) -    Truncates the session table.</li>
+<li> shell-alias (sha)   -  Print all known shell alias records.??</li>
+ <li>site-alias (sa)   -    Print site alias records for all known site aliases and local sites.</li>
+<li>site-set (use)     -   Set a site alias to work on that will persist for the current session.
+ <li>site-ssh (ssh)        Connect to a Drupal site's server via SSH for an  interactive session or to run a shell command</li>
+ <li>sql-sanitize    (sqlsan) -      Run sanitization operations on the current database.</li>
+ <li>twig-compile (twigc)  Compile all Twig template(s).</li>
+<li> updatedb (updb)   -    Apply any database updates required (as with running update.php).</li>
+<li> updatedb-status    (updbst) -    List any pending database updates.</li>
+<li> version       -         Show drush version.</li>
+<li> wrap:table-name   (wrap-table-name)  -      Wraps a table name in brackets if a database prefix is being used.</li>
+</ul>
+
+<h2>Cache commands: (cache)</h2>
+<ul>
+<li> cache-clear (cc)   -   Clear a specific cache, or all drupal caches.</li>
+ <li>cache-get (cg)        Fetch a cached object and display it.</li>
+ <li>cache-rebuild (cr, rebuild) -   Rebuild a Drupal 8 site and clear all its caches. </li>
+ <li>cache-set (cs)   -     Cache an object expressed in JSON or var_export() format.</li>
+</ul>
+
+<h2>Config commands: (config)</h2>
+<ul>
+<li>  config-delete (cdel) - Delete a configuration object.</li>
+ <li>config-edit (cedit)  - Open a config file in a text editor. Edits are importe into active configuration after closing editor.</li>
+ <li>config-export (cex)  - Export configuration to a directory.</li>
+ <li>config-get (cget)  -   Display a config value, or a whole configuration objec</li>
+ <li>config-import (cim)  - Import config from a config directory.</li>
+ <li>config-list (cli)  -   List config names by prefix.</li>
+ <li>config-pull (cpull)  - Export and transfer config from one environment to another.</li>
+ <li> config-set (cset)     Set config value directly. Does not perform a config import.</li>
+</ul>
+
+<h2>Field commands: (field)</h2>
+<ul>
+<li>field-clone      -     Clone a field and all its instances..</li>
+<li> field-create      -    Create fields and instances. Returns urls for field editing.</li>
+ <li>field-delete      -    Delete a field and its instances..</li>
+ <li>field-info        -    View information about fields, field_types, and widgets..</li>
+ <li>field-update     -     Return URL for field editing web page..</li>
+</ul>
+
+<h2>Make commands: (make)</h2>
+<p>Is it still possbile to use Make files? Are these related to install profiles?</p>
+
+<h2>Module update commands</h2>
+<p>AKA Project manager commands (pm)</p>
+<ul>
+<li> pm-disable (dis)  -   Disable one or more extensions (modules or themes).</li>
+ <li>pm-download (dl)   -   Download projects from drupal.org or other sources.</li>
+ <li>pm-enable (en)    -    Enable one or more extensions (modules or themes).</li>
+ <li>pm-info (pmi)      -   Show detailed info for one or more extensions (modules or themes).</li>
+ <li> pm-list (pml)     -    Show a list of available extensions (modules and themes).</li>
+ <li>pm-projectinfo (pmpi)     -    Show a report of available projects and their extensions.</li>
+ <li>pm-refresh (rf)    -   Refresh update status information.</li>
+ <li>pm-releasenotes  (rln)  -    Print release notes for given projects.</li>
+ <li>pm-releases (rl)   -   Print release information for given projects.</li>
+ <li>pm-uninstall (pmu)  -  Uninstall one or more modules and their dependent modules.</li>
+ <li>pm-update (up)     -   Update Drupal core and contrib projects and apply any pending database updates (Same as pm-updatecode + updatedb). </li>
+ <li>pm-updatecode (upc)  -  Update Drupal core and contrib projects to latest recommended releases.</li>
+ <li>pm-updatestatus  (ups)  -   Show a report of available minor updates to Drupal core and contrib projects.</li>
+</ul>
+
+<h2>SQL commands: (sql)</h2>
+ <ul>
+<li>sql-cli (sqlc)   - Open a SQL command-line interface using Drupal's credentials.</li>
+<li> sql-connect    -        A string for connecting to the DB.</li>
+ <li>sql-create       -     Create a database.</li>
+ <li>sql-drop        -      Drop all tables in a given database.</li>
+ <li>sql-dump         -     Exports the Drupal DB as SQL using mysqldump or equivalent.</li>
+ <li>sql-query (sqlq)  -    Execute a query against a database.</li>
+ <li>sql-sync  - Copies the database contents from a source site to a target site. Transfers the database dump via rsync.
+</li>
+
+<h2>Watchdog commands: (watchdog)</h2>
+<ul>
+<li>watchdog-delete   -   Delete watchdog messages. (wd-del, wd-delete)</li>
+ <li>watchdog-list  (wd-list)   -   Show available message types and severity levels. A prompt will ask for a choice to show watchdog messages.</li>
+ <li>watchdog-show    -    Show watchdog messages.</li>
+</ul>
+
+
+
+<h2> </h2>
+<ul>
+<li> </li>
+</ul>
+ 
